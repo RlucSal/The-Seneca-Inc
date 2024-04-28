@@ -1,8 +1,32 @@
 import React from "react";
-import "../app.css";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 const Home = () => {
-  return <p>hello Seneca</p>;
+  return (
+    <div className="home-container">
+      <div className="home-background">
+        <div className="text-container">
+          <h1 className="main-heading">The Seneca, Inc.</h1>
+          <h3 className="sub-heading ">Est. 1999</h3>
+        </div>
+      </div>
+
+      <div className="herosentence-container">
+        <div className="herosentence-text-container">
+          <h3>Strengthening Opportunities for Women at Harvard</h3>
+        </div>
+      </div>
+      <div className="button-container">
+        <Link to="/ContactUs">
+          <Button variant="primary" className="button">
+            Contact Us
+          </Button>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

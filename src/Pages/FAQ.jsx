@@ -3,8 +3,8 @@ import "../app.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
-const SupportUs = () => {
-  return <p>hello SupportUs</p>;
+const FAQ = () => {
+  return <p>hello ContactUS</p>;
 };
 
-export default SupportUs;
+export default FAQ;
