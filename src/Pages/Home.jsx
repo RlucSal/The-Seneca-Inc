@@ -13,11 +13,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="herosentence-container">
-        <div className="herosentence-text-container">
-          <h3>Strengthening Opportunities for Women at Harvard</h3>
-        </div>
-      </div>
+     
       <div className="button-container">
         <Link to="/ContactUs">
           <Button variant="primary" className="button">

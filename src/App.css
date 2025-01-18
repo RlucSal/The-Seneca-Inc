@@ -6,10 +6,10 @@
 
 /* Home Background */
 .home-background {
-  background-image: url('../src/img/door.png'); 
+  background-image: url('../src/img/hardvardhome.webp'); 
   background-size: cover;
   background-position: center;
-  opacity: 0.9;
+  opacity: 0.8;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,10 +24,15 @@
 
 /* Text Container */
 .text-container {
-  text-align: center;
-  color: whitesmoke; 
-  margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 30px; 
+  position:relative;
 }
 
 .main-heading {
@@ -38,43 +43,12 @@
   font-size: 2.5rem; 
 }
 
-/* Hero Sentence Container */
-.herosentence-container {
-  margin-top: 50vh; 
-  padding: 12px;
-  text-align: center;
-  position: relative; 
-  opacity: 0.9;
-}
-
-.herosentence-container::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  height: 0.8px;
-  background-color:whitesmoke;
-}
-
-/* Hero Sentence Text Container */
-.herosentence-text-container {
-  color: whitesmoke;
-  font-family: "Allison", cursive;
-}
-
-.herosentence-text-container h3 {
-  font-size: 3.7rem;
-  margin-bottom: 40px;
-}
-
 /* Button Container */
 .button-container {
-  display: flex;
-  flex-direction: column;         
-  justify-content: flex-end;     
-  align-items: center;            
-  margin-top: 20px;              
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width: 100%;
 }
 
 .button {
@@ -117,7 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
