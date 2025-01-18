@@ -6,7 +6,6 @@
   min-height: 100vh; 
   position: relative; 
 }
-
 /* Home Background */
 .home-background {
   background-image: url('../src/img/hardvardhome.webp');
@@ -49,8 +48,6 @@
 .sub-heading {
   font-size: 2.5rem;
 }
-
-
 /* Button Container */
 .button-container {
   display: flex;
@@ -59,8 +56,6 @@
   justify-content: center; 
   margin-top: 50vh;
   width: 100%;
-  
-
 }
 
 .button {

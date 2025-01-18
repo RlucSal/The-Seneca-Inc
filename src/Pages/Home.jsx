@@ -11,10 +11,8 @@ const Home = () => {
           <h1 className="main-heading">The Seneca, Inc.</h1>
           <h3 className="sub-heading ">Est. 1999</h3>
           <div className="hero">  
-            <h1 className="sentence">Strengthenin Opportunities for Women at Hardvard</h1>
+            <h1 className="sentence">Strengthening Opportunities for Women at Harvard</h1>
             </div>
-         
-
         </div>
       </div>
       <div className="button-container">
