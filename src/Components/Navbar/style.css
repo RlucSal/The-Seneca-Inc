@@ -1,45 +1,37 @@
 .navbar {
-  background-color: transparent;
-  position: fixed !important;
+  background: black;
+  opacity: 0.7;
+  position:fixed !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10; 
 }
-
 .navbar-container {
   display:flex;
   justify-content: center; 
   align-items: center;
-  padding: 1rem;
+  padding: 0.4rem;
   width: 100%; 
 }
-
 .navbar-menu {
   list-style-type: none;
   display: flex;
   gap: 1rem;
   margin: 0; 
 }
-
 .navbar-item {
   padding: 0.5rem;
 }
-
 .navbar-link {
-  color: black; 
-  opacity: 0.85;
+  color: whitesmoke;
   text-decoration: none;
   padding: 0.5rem;
   position: relative; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
-  font-weight: bold;
-}
-
-.black-navbar .navbar-link {
-  color: black;
-  font-weight: bold;
+  transition: transform 0.2s ease-in-out; 
+  z-index: 20; 
 }
 
 .navbar-link:before,
@@ -50,31 +42,14 @@
   transform: translateX(-50%);
   width: 0; 
   height: 1px;
-  background-color: black;
+  background-color: whitesmoke;
   bottom: 0; 
 }
 
-.black-navbar .navbar-link:before,
-.black-navbar .navbar-link:after {
-  background-color: black;
-}
-
 .navbar-link:hover {
-  color:black;
+  color: whitesmoke;
 }
-
-.black-navbar .navbar-link:hover {
-  color: black;
-}
-
-
 .navbar-link:hover:before,
 .navbar-link:hover:after {
   width: 100%;
 }
-
-.black-navbar .navbar-link:hover:before,
-.black-navbar .navbar-link:hover:after {
-  background-color: black;
-}
-

@@ -1,10 +1,10 @@
 import React from "react";
 import "../app.css";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+
+
 
 const FAQ = () => {
-  return <p>hello ContactUS</p>;
+  return <p>hello faq</p>;
 };
 
 export default FAQ;

@@ -1,3 +1,5 @@
+
+/* home page */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,7 @@
 }
 /* Home Background */
 .home-background {
-  background-image: url('../src/img/hardvardhome.webp');
+  background-image: url('../src/img/boston.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.8;
@@ -20,7 +22,6 @@
   right: 0;
   z-index: -2;
 }
-
 /* Text Container */
 .text-container {
   display: flex;
@@ -35,18 +36,13 @@
   position: relative;
  
 }
-.hero{
-  font-family: "Waiting for the Sunrise", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
 .main-heading { 
   font-size: 5.5rem;
 }
 
 .sub-heading {
   font-size: 2.5rem;
+  
 }
 /* Button Container */
 .button-container {
@@ -55,6 +51,7 @@
   align-items: center;
   justify-content: center; 
   margin-top: 50vh;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -78,18 +75,20 @@
   transform: scale(1.1) !important;
 }
 
-/* About Us Container */
+/* About Us Page */
 .about-us-container {
   position: relative;
   z-index: 0;
+  height: 100vh; 
 }
 
 .background-image2 {
-  background-image: url('../src/img/us.png');
+  background-image: url('../src/img/about_us_seneca.jpeg');
   background-size: cover;
   background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   opacity: 0.9;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,17 +100,208 @@
 }
 
 .image-text {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
   color: whitesmoke;
-  opacity: 0.8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   z-index: 1;
+  height: 100%; 
 }
 
 .image-text h1 {
-  font-size: 5.5rem;
+  font-size: 5.6rem;
+  margin: 0; 
+
+}
+.hero{
+  font-family: "Waiting for the Sunrise", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.15rem;
+  color:blueviolet
+}
+  
+.about-us-2-container {
+  display: grid; 
+  grid-template-columns: 1fr 4fr; 
+  gap: 20px; 
+  max-width: 1200px; 
+  margin: 0px 30px; 
+  align-items: start; 
+ 
+
+}
+
+.about-us-2-text {
+  padding: 8%;
+  line-height: 2.2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.about-us-2-links {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.about-us-2-links a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blueviolet;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px;
+  position: relative; /* To allow positioning of the border */
+  transition: color 0.7s ease, font-weight 0.7s ease, border-bottom 0.3s ease; /* Smooth transition for all properties */
+}
+
+.about-us-2-links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Border thickness */
+  background-color: black;
+  transform: scaleX(0); /* Initial state: no visible border */
+  transform-origin: bottom right;
+  transition: transform 0.7s ease; /* Smooth transition for border */
+}
+
+.about-us-2-links a:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.about-us-2-links a:hover::before {
+  transform: scaleX(1); /* On hover, make the border visible */
+}
+
+/* Membership Page */
+
+.member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.member-image {
+  background-image: url('../src/img/flower.jpg');
+  background-size:cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0.7;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+}
+
+.image-text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  z-index: 1; 
+  height: 100%;
+  position: relative;
+}
+
+.image-text2 h1 {
+  font-size: 5.6rem;
+  margin-top: 20vh;
+}
+
+.application-container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100%;
+  margin-top: 25vh;
+}
+.hero-app{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5vh;
+}
+
+.text-app{
+  padding: 0vh 45vh;
+  line-height: 2.2;
+  font-size: 1.2rem;
+
+}
+
+.application-form {
+  width: 40%;
+  margin: 40px;
+  padding: 60px 80px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#name, #email, #message {
+  border: none;
+  border-bottom: solid 1px black;
+  width: 100%;
+  background-color: whitesmoke;
+  color:#330e56;
+  transition: background-color 0.3s, border-bottom 0.3s;
+}
+#name:focus, #email:focus, #message:focus {
+  border: none; 
+  border-radius: 15px;
+  background-color: rgb(249, 239, 249); 
+  outline: none;  
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: blueviolet;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #330e56;
+}
+
+.submit-btn:focus {
+  outline: none;
 }

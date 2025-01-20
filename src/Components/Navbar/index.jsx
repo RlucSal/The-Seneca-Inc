@@ -1,14 +1,11 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./style.css";
 import "../../App.css";
 
 function Navbar() {
-  const location = useLocation();
-  const isAboutUsPage = location.pathname === "/AboutUs";
-
   return (
-    <nav className={isAboutUsPage ? "navbar black-navbar" : "navbar"}>
+    <nav className="navbar">
       <div className="navbar-container">
         <ul className="navbar-menu">
           <li className="navbar-item">
@@ -34,6 +31,11 @@ function Navbar() {
           <li className="navbar-item">
             <Link to="/Gallery" className="navbar-link">
               Gallery
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/New" className="navbar-link">
+              What's New?
             </Link>
           </li>
         </ul>

@@ -13,6 +13,7 @@ const Footer = () => {
               className="footer-logo"
             />
           </div>
+          <p className="footer-copyright">© The Seneca, Inc.</p>
         </div>
       </footer>
     </div>
