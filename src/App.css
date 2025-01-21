@@ -158,8 +158,8 @@
   text-decoration: none;
   display: inline-block;
   padding: 4px;
-  position: relative; /* To allow positioning of the border */
-  transition: color 0.7s ease, font-weight 0.7s ease, border-bottom 0.3s ease; /* Smooth transition for all properties */
+  position: relative; 
+  transition: color 0.5s ease, font-weight 0.5s ease, border-bottom 0.3s ease; 
 }
 
 .about-us-2-links a::before {
@@ -168,20 +168,19 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* Border thickness */
+  height: 1px; 
   background-color: black;
-  transform: scaleX(0); /* Initial state: no visible border */
+  transform: scaleX(0); 
   transform-origin: bottom right;
-  transition: transform 0.7s ease; /* Smooth transition for border */
+  transition: transform 0.5s ease; 
 }
 
 .about-us-2-links a:hover {
   color: black;
-  font-weight: 600;
 }
 
 .about-us-2-links a:hover::before {
-  transform: scaleX(1); /* On hover, make the border visible */
+  transform: scaleX(1);
 }
 
 /* Membership Page */
@@ -263,6 +262,9 @@
   position: relative;
   overflow: hidden;
 }
+.text-form{
+  text-align: center;
+}
 
 .form-group {
   position: relative;
@@ -305,3 +307,298 @@
 .submit-btn:focus {
   outline: none;
 }
+
+.thank-you-message{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  margin: 40px;
+}
+
+
+/* leadership page */
+
+.leader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.leader-image {
+  background-image: url('../src/img/roses.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  height: 50vh; 
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+}
+
+.image-text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  z-index: 1;
+  height: 100%;
+  position: relative;
+}
+
+.image-text3 h1 {
+  font-size: 5.6rem;
+  margin-top: 25vh;
+}
+.title h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  color: #555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leaders-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.leader-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.leader-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.leader-box h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.leader-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+  /* fundraising page */
+
+.fund-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fund-image {
+  background-image: url('../src/img/fundraising.webp');
+  background-size:cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+}
+
+.image-text4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  color:black; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  z-index: 1; 
+  position: relative;
+}
+
+.image-text4 h1{
+  font-size: 5.6rem;
+  margin-top: 25vh;
+}
+.why-found{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 25vh 25vh  10vh  30vh;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+line-height: 2.2;
+font-size: 1.2rem;
+
+}
+.why-found h3{
+  padding: 6vh;
+}
+
+/* Grid layout for the Fundraising section */
+.fundraising-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; 
+  justify-items: center; 
+  padding: 20px;
+}
+
+
+.donorbox-container {
+  width: 100%;
+  max-width: 400px; 
+  display: flex;
+}
+
+
+.qr-code-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  gap: 16px; 
+}
+
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  object-fit: contain; 
+}
+
+
+.campaign-link {
+  font-size: 16px;
+  color: #330e56; 
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.campaign-link:hover {
+  color: blue; 
+}
+
+
+   /* faq page */
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 50vh;
+  position: relative;
+}
+
+.faq-image {
+  background-image: url('../src/img/QUESTION.jpg');
+  background-size:cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+}
+.image-text5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  color:black; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  z-index: 1; 
+  height: 100%;
+  position: relative;
+}
+
+.image-text5 h1{
+  font-size: 5.6rem;
+  margin-top: 20vh;}
+
+  .faq-content {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center;
+      margin-top: 12%;
+      margin-bottom: 5%;
+      margin-left: 29%;
+      max-width: 700px; 
+
+      
+    }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  }
+  
+  .faq-question {
+    width: 100%;
+    background: #330e56;
+    color:whitesmoke;
+    padding: 20px;
+    text-align: left;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .faq-question.active {
+    background: blueviolet;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    background: #f8f9fa;
+    font-size: 14px;
+    color: #333;
+  }

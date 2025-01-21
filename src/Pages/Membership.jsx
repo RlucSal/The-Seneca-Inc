@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { init, sendForm } from "@emailjs/browser"; 
+import { init, sendForm } from "@emailjs/browser";
 
 const Membership = () => {
   useEffect(() => {
-    init("qpT1pndieN_ccspAG"); 
+    init("qpT1pndieN_ccspAG");
   }, []);
 
   // Form state
@@ -14,6 +14,7 @@ const Membership = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -28,18 +29,16 @@ const Membership = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send form data via EmailJS
-    sendForm('service_ke2poga', 'template_mz6mkdn', e.target)
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSubmitted(true);
-          setFormData({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    sendForm("service_ke2poga", "template_mz6mkdn", e.target).then(
+      (result) => {
+        console.log(result.text);
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
@@ -48,6 +47,7 @@ const Membership = () => {
       <div className="image-text2">
         <h1>MEMBERSHIP</h1>
       </div>
+
       <div className="application-container">
         <p className="hero-app">
           The Seneca is currently accepting applications from women Harvard’s
@@ -77,6 +77,7 @@ const Membership = () => {
         </div>
       ) : (
         <form className="application-form" onSubmit={handleSubmit}>
+          <h2 className="text-form"> Join Us!</h2>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
@@ -100,7 +101,9 @@ const Membership = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Why you are interested on The Seneca, Inc.? :</label>
+            <label htmlFor="message">
+              Why you are interested in The Seneca, Inc.? :
+            </label>
             <textarea
               id="message"
               name="message"
