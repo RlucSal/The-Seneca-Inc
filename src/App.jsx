@@ -11,7 +11,6 @@ import Fundraising from "./Pages/Fundraising";
 import Leadership from "./Pages/Leadership";
 import Membership from "./Pages/Membership";
 import ContactUs from "./Pages/ContactUS";
-import Password from "./Pages/Password";
 import Footer from "./Components/Footer";
 
 import {
@@ -47,7 +46,6 @@ const App = () => {
         <Route path="/Membership" element={<Membership/>} />
         <Route path="/Leadership" element={<Leadership/>} />
         <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/Password" element={<Password />} />
       </Routes>
       <Footer />
     </Router>
