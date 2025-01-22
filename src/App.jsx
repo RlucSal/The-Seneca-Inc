@@ -5,7 +5,6 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs"; 
 import FAQ from "./Pages/FAQ";
 import WomenHarvard from "./Pages/WomenHarvard";
-import Events from "./Pages/Events";
 import Gallery from "./Pages/Gallery";
 import New from "./Pages/new";
 import Fundraising from "./Pages/Fundraising";
@@ -42,7 +41,6 @@ const App = () => {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/WomenHarvard" element={<WomenHarvard />} />
-        <Route path="/Events" element={<Events />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/New" element={<New />} />
         <Route path="/Fundraising" element={< Fundraising/>} />

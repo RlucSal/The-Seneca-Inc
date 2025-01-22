@@ -24,11 +24,6 @@ function Navbar() {
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/Events" className="navbar-link">
-              Events
-            </Link>
-          </li>
-          <li className="navbar-item">
             <Link to="/Gallery" className="navbar-link">
               Gallery
             </Link>

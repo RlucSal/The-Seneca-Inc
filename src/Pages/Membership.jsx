@@ -102,7 +102,7 @@ const Membership = () => {
           </div>
           <div className="form-group">
             <label htmlFor="message">
-              Why you are interested in The Seneca, Inc.? :
+              Why are you interested in The Seneca, Inc.? :
             </label>
             <textarea
               id="message"
