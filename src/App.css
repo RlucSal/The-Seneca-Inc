@@ -732,15 +732,58 @@ font-size: 1.2rem;
   }
 
   /* News page */
+
+  .news-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+  }
+  .news-image1 {
+    background-image: url('../src/img/news2.webp');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    height: 50vh; 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; 
+  }
+  
+  .news-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1;
+    height: 100%;
+    position: relative;
+    
+  }
+  .news-text2 h1{
+    font-size: 5.6rem;
+    margin-top: 22vh;
+  }
+
 .news-container {
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
   width: 60%;
-  margin: 0 auto;
+  margin-top: 20vh;
   padding: 20px;
   border-radius: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
 h1 {
@@ -873,4 +916,71 @@ h1 {
 .picture:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*contact page*/
+
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+.contact-image {
+  background-image: url('../src/img/contactus.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  height: 131vh; 
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+}
+.contact-text h1{
+  font-size: 4.5rem;
+  margin-top: 10vh;
+  padding-top: 5vh;
+  color: whitesmoke;
+}
+
+.hero-app1{
+  font-family: "Waiting for the Sunrise", serif;
+  font-size: 2.5rem;
+}
+.contact-form2 {
+  max-width: 30%;
+  margin: 5vh;
+  padding: 30px 60px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+  padding: 2vh;
+}
+
+.social-icon {
+  color:blueviolet;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #0073b1; /* Example hover color */
 }

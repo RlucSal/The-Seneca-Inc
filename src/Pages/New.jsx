@@ -10,8 +10,8 @@ const New = () => {
     const fetchNews = async () => {
       const params = {
         api_token: 'cjpQk7mBwGIcK4NUbiieWRF7EQLtWztBdnqqfngL',
-        categories: 'education, science, university', 
-        search: 'harvard Gazette, women', 
+        categories: 'education,science, women', 
+        search: 'harvard, university, women', 
         limit: '100'
       };
 
@@ -50,9 +50,9 @@ const New = () => {
   if (error) return <p>{"No more API requests available at the moment"}</p>;
 
   return (
-    <div className="member-container">
-    <div className="member-image"></div>
-    <div className="image-text2">
+    <div className="news-container1">
+    <div className="news-image1"></div>
+    <div className="news-text2">
       <h1>WHAT'S NEW</h1>
     </div>
     <div className="news-container">
