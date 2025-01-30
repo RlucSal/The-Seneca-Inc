@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { init, sendForm } from "@emailjs/browser";
+import "../App.css";
 
 const Membership = () => {
   useEffect(() => {

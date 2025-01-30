@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaPhone, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
-import "../app.css";
+import "../App.css";
 import { init, sendForm } from "@emailjs/browser";
 
 const ContactUs = () => {
