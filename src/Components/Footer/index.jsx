@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import logowhite1 from "../../img/logowhite1.png"; // Correct relative path
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="align-container">
           <div className="logo-container">
             <img
-              src="src\img\logowhite1.png"
+              src={logowhite1}
               alt="The Seneca Logo"
               className="footer-logo"
             />
