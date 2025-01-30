@@ -6,7 +6,7 @@ import AboutUs from "./Pages/AboutUs";
 import FAQ from "./Pages/FAQ";
 import WomenHarvard from "./Pages/WomenHarvard";
 import Gallery from "./Pages/Gallery";
-import New from "./Pages/new";
+import New from "./Pages/New";
 import Fundraising from "./Pages/Fundraising";
 import Leadership from "./Pages/Leadership";
 import Membership from "./Pages/Membership";
